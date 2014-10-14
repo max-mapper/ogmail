@@ -1,6 +1,6 @@
 {
   "name": "ogmail",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "bin": {
     "ogmail": "./bin.js"
   },
@@ -9,7 +9,9 @@
   "author": "max ogden",
   "license": "BSD",
   "dependencies": {
-    "node-gmail-api": "^0.2.3"
+    "ansi-styles": "^1.1.0",
+    "node-gmail-api": "^0.2.3",
+    "window-size": "^0.1.0"
   },
   "devDependencies": {},
   "repository": {
