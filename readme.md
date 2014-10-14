@@ -6,18 +6,20 @@ minimalist gmail cli client
 
 ## installation
 
-first install and set up [`googleauth`](http://npmjs.org/googleauth)
-
-then authorize `googleauth` using the following command:
+you will need to install 2 modules globally, `googleauth` and `ogmail`:
 
 ```
-googleauth --scope=https://www.googleapis.com/auth/gmail.readonly
+npm install googleauth ogmail -g
 ```
 
-then install `ogmail`:
+next, follow the readme of [`googleauth`](http://npmjs.org/googleauth) to create a google application and get your client, secret and scope
+
+then get a google token using the following command:
 
 ```
-npm install ogmail -g
+googleauth --scope=https://www.googleapis.com/auth/gmail.readonly --client_id="foobar" --client_secret="mysecret"
 ```
 
-then run `ogmail` to begin
+this will save your token in `~/.config/googleauth.json` which is also where `ogmail` will look for your token when you use it
+
+finally, run `ogmail` to begin
