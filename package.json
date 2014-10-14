@@ -1,0 +1,23 @@
+{
+  "name": "ogmail",
+  "version": "1.0.0",
+  "bin": {
+    "ogmail": "./bin.js"
+  },
+  "description": "minimalist gmail cli client",
+  "main": "index.js",
+  "author": "max ogden",
+  "license": "BSD",
+  "dependencies": {
+    "node-gmail-api": "^0.2.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/maxogden/ogmail.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxogden/ogmail/issues"
+  },
+  "homepage": "https://github.com/maxogden/ogmail"
+}
