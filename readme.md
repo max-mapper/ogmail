@@ -4,6 +4,8 @@ minimalist gmail cli client
 
 **work in progress**
 
+![screenshot](screenshot.png)
+
 ## installation
 
 you will need to install 2 modules globally, `googleauth` and `ogmail`:

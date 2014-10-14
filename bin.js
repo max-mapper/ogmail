@@ -14,13 +14,13 @@ ogmail({token: token})
     var unread = obj.labelIds.indexOf('UNREAD') > -1
     var openColor = '', closeColor = ''
     if (unread) {
-      openColor = ansi.white.open + ansi.bgGreen.open
-      closeColor = ansi.bgGreen.close + ansi.white.close
-    } else {
       openColor = ansi.bold.open
       closeColor = ansi.bold.close
+    } else {
+      openColor = ansi.gray.open
+      closeColor = ansi.gray.close
     }
-    var out = ['-', openColor, getHeader(obj, 'Subject'), closeColor, '-', obj.snippet.trim()].join(' ')
+    var out = ['•' + openColor, getHeader(obj, 'Subject').trim(), closeColor + '-', obj.snippet.trim()].join(' ')
     if (out.length > size.width) out = out.substr(0, size.width)
     console.log(out)
   })
