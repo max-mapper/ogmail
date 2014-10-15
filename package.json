@@ -1,6 +1,6 @@
 {
   "name": "ogmail",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "bin": {
     "ogmail": "./bin.js"
   },
@@ -11,7 +11,13 @@
   "dependencies": {
     "ansi-styles": "^1.1.0",
     "node-gmail-api": "^0.2.3",
+    "through2": "^0.6.3",
+    "unescape": "^0.1.1",
+    "visualwidth": "0.0.1",
     "window-size": "^0.1.0"
+  },
+  "scripts": {
+    "test": "cat inbox.ndjson | node test.js"
   },
   "devDependencies": {},
   "repository": {
