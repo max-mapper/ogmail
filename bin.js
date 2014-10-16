@@ -8,4 +8,4 @@ var inbox = require('./inbox')
 var configPath = path.join(process.env.HOME || process.env.USERPROFILE, '.config', 'googleauth.json')
 var token = JSON.parse(fs.readFileSync(configPath)).access_token
 
-ogmail({token: token}).pipe(inbox())
+ogmail({token: token}).pipe(inbox()).pipe(process.stdout)
