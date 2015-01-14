@@ -47,5 +47,6 @@ function renderRow(obj) {
     for (var i = 0; i < headers.length; i++) {
       if (headers[i].name === header) return headers[i].value
     }
+    return ''
   }
 }
